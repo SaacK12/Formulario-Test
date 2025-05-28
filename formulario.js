@@ -5,12 +5,12 @@ function enviar()
     let asunto = document.getElementById("asunto").value;
     let mensaje = document.getElementById("mensaje").value;
     let captchaRespuesta = grecaptcha.getResponse();
-    let usuario = {
-            nombre: nombre,
-            email: email,
-            asunto: asunto,
-            mensaje: mensaje,
-            }
+    //let usuario = {
+      //      nombre: nombre,
+        //    email: email,
+          //  asunto: asunto,
+            //mensaje: mensaje,
+           // }
         console.log(captchaRespuesta);
 if (!nombre || !email || !asunto || !mensaje|| captchaRespuesta === "") //Si el Captcha no devuelve ningun token.
 {
@@ -18,6 +18,11 @@ if (!nombre || !email || !asunto || !mensaje|| captchaRespuesta === "") //Si el 
 }
 else{ 
     console.log(usuario);
-        emailjs.send("service_eajnwps","template_sdrwghq", usuario);
+    emailjs.send("service_eajnwps","template_bfsmb7m",{
+        nombre: nombre,
+        email: email,
+        asunto: asunto,
+        mensaje: mensaje,
+        });
 }
 }
