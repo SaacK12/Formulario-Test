@@ -11,6 +11,12 @@
     <script src="formulario.js"></script>
     <!--Script de reCAPTCHA-->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!--EmailJS-->
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+    emailjs.init('caUtmrPGTuEg1pcni')
+</script>
     </head>
 <body>
 <div class="container text-center">
@@ -36,7 +42,6 @@
   <!--reCAPTCHA-->
   <div class="col">
       <div class="g-recaptcha" data-sitekey="6Lc2Sk0rAAAAADTC5HOMiLqfVlUHD68u-zzxa3gZ" data-callback="recaptcha_ok"></div>
-
   <!--Boton-->
  <button type="button" class="btn btn-success btn-lg" onclick="enviar()">Enviar</button>
 </div>

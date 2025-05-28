@@ -1,5 +1,5 @@
 function enviar()
-{
+{   //Variables.
     let nombre = document.getElementById("nombre").value;
     let email = document.getElementById("email").value;
     let asunto = document.getElementById("asunto").value;
@@ -12,11 +12,13 @@ function enviar()
             mensaje: mensaje,
             }
         console.log(captchaRespuesta);
-if (!nombre || !email || !asunto || !mensaje|| captchaRespuesta === "")
+if (!nombre || !email || !asunto || !mensaje|| captchaRespuesta === "") //Si el Captcha no devuelve ningun token.
 {
     alert("complete los datos y el captcha");
 }
 else{ 
     console.log(usuario);
+    alert("Enviado!")
+   emailjs.send("service_eajnwps","template_vlayof8");
 }
 }
