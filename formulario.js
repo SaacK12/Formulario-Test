@@ -11,7 +11,7 @@ function enviar()
             asunto: asunto,
             mensaje: mensaje,
             }
-        
+        console.log("captchaRespuesta:", captchaRespuesta);
 if (!nombre || !email || !asunto || !mensaje|| captchaRespuesta === "")
 {
     alert("complete los datos y el captcha");
