@@ -18,7 +18,6 @@ if (!nombre || !email || !asunto || !mensaje|| captchaRespuesta === "") //Si el 
 }
 else{ 
     console.log(usuario);
-    alert("Enviado!")
-emailjs.send("service_eajnwps","template_sdrwghq");
+        emailjs.send("service_eajnwps","template_sdrwghq");
 }
 }
