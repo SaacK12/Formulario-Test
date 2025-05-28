@@ -4,6 +4,7 @@ function enviar()
     let email = document.getElementById("email").value;
     let asunto = document.getElementById("asunto").value;
     let mensaje = document.getElementById("mensaje").value;
+    let captchaRespuesta = grecaptcha.getResponse();
     let usuario = {
             nombre: nombre,
             email: email,
@@ -11,7 +12,7 @@ function enviar()
             mensaje: mensaje,
             }
         
-if (!nombre || !email || !asunto || !mensaje)
+if (!nombre || !email || !asunto || !mensaje|| captchaRespuesta === "")
 {
     alert("complete los datos y el captcha");
 }
