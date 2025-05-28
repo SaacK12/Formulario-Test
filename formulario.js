@@ -19,5 +19,6 @@ if (!nombre || !email || !asunto || !mensaje|| captchaRespuesta === "") //Si el 
 else{ 
     console.log(usuario);
     emailjs.send("service_eajnwps","template_bfsmb7m",usuario)
+      alert("Enviado!")
 }
 }
