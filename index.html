@@ -48,6 +48,13 @@
       <div class="g-recaptcha" data-sitekey="6Lc2Sk0rAAAAADTC5HOMiLqfVlUHD68u-zzxa3gZ" data-callback="recaptcha_ok"></div>
   <!--Boton-->
  <button type="button" class="btn btn-success btn-lg" onclick="enviar()">Enviar</button>
+  <!--APPScript test--> 
+  <script> 
+fetch('https://script.google.com/macros/s/AKfycbzjhL66ryiWxYHkb-i3kQYaIIDHHRg0kmoYuJTXI9lJRpPFWwHfG-sVHGKSajIpy65cjg/exec', {
+  method: 'POST',
+  body: JSON.stringify(data),
+  headers: { 'Content-Type': 'application/json' }  })
+  </script>
 </div>
 </div>
 </body>
