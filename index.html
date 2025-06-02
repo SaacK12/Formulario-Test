@@ -51,7 +51,7 @@
  <button type="button" class="btn btn-success btn-lg" onclick="enviar()">Enviar</button>
   <!--APPScript test--> 
     <script>
-            const formData = new formData(form);
+            const formData = new FormData(form);
       fetch('https://script.google.com/macros/s/AKfycbzjhL66ryiWxYHkb-i3kQYaIIDHHRg0kmoYuJTXI9lJRpPFWwHfG-sVHGKSajIpy65cjg/exec', {
   method: 'POST',
   body: formData,
