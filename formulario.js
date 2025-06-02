@@ -23,7 +23,7 @@ else{
   //APPScript test
       fetch('https://script.google.com/macros/s/AKfycbzjhL66ryiWxYHkb-i3kQYaIIDHHRg0kmoYuJTXI9lJRpPFWwHfG-sVHGKSajIpy65cjg/exec', {
   method: 'POST',
-  body: JSON.stringify(usuario),
+  body: usuario,
   mode: "no-cors"
 })
 .then(response => response.text())
