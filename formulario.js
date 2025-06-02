@@ -21,7 +21,7 @@ else{
     emailjs.send("service_eajnwps","template_bfsmb7m",usuario)
       alert("Enviado!")
 
-      fetch('https://script.google.com/macros/s/AKfycbzjhL66ryiWxYHkb-i3kQYaIIDHHRg0kmoYuJTXI9lJRpPFWwHfG-sVHGKSajIpy65cjg/exec', {
+      fetch('AKfycbzjhL66ryiWxYHkb-i3kQYaIIDHHRg0kmoYuJTXI9lJRpPFWwHfG-sVHGKSajIpy65cjg', {
   method: 'POST',
   body: JSON.stringify(usuario),
   headers: { 'Content-Type': 'application/json' }
