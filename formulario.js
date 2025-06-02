@@ -20,7 +20,7 @@ else{
     console.log(usuario);
     emailjs.send("service_eajnwps","template_bfsmb7m",usuario)
       alert("Enviado!")
-
+  //APPScript test
       fetch('AKfycbzjhL66ryiWxYHkb-i3kQYaIIDHHRg0kmoYuJTXI9lJRpPFWwHfG-sVHGKSajIpy65cjg', {
   method: 'POST',
   body: JSON.stringify(usuario),
