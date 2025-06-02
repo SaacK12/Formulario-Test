@@ -27,5 +27,8 @@ else{
   body: formData,
   mode: "no-cors"
 })
+.then(response => response.text())
+.then(result => console.log(result))
+.catch(error => console.error('Error:', error));
 }
 }
