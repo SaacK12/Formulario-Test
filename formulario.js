@@ -20,21 +20,6 @@ else{
     console.log(usuario);
     emailjs.send("service_eajnwps","template_bfsmb7m",usuario)
       alert("Enviado!")
-
-      fetch('https://script.google.com/macros/s/AKfycbzjhL66ryiWxYHkb-i3kQYaIIDHHRg0kmoYuJTXI9lJRpPFWwHfG-sVHGKSajIpy65cjg/exec', {
-        method: 'POST',
-        body: JSON.stringify(usuario), // <--- CORRECTO
-        headers: { 'Content-Type': 'application/json' }
-    })
-    .then(response => response.text())
-    .then(result => {
-        alert("Datos enviados correctamente");
-        console.log(result);
-    })
-    .catch(error => {
-        alert("Error al enviar los datos (Gracias Google)");
-        console.error('Error:', error);
-        window.location.href = 'https://youtu.be/MS8OawQegYE?si=64buJf31Ro_6FC-O';
-    });
-} 
+ }
+ 
  }
