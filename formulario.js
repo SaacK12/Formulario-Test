@@ -23,7 +23,7 @@ else{
 
       fetch('https://script.google.com/macros/s/AKfycbzjhL66ryiWxYHkb-i3kQYaIIDHHRg0kmoYuJTXI9lJRpPFWwHfG-sVHGKSajIpy65cjg/exec', {
         method: 'POST',
-        body: JSON.stringify(usuario),
+        body: formData,
         headers: { 'Content-Type': 'application/json' }
     })
     .then(response => response.text())
