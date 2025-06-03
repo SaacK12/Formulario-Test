@@ -23,7 +23,7 @@ else{
 
       fetch('https://script.google.com/macros/s/AKfycbzjhL66ryiWxYHkb-i3kQYaIIDHHRg0kmoYuJTXI9lJRpPFWwHfG-sVHGKSajIpy65cjg/exec', {
         method: 'POST',
-        body: formData,
+        body: JSON.stringify(usuario), // <--- CORRECTO
         headers: { 'Content-Type': 'application/json' }
     })
     .then(response => response.text())
@@ -35,6 +35,5 @@ else{
         alert("Error al enviar los datos (Gracias Google)");
         console.error('Error:', error);
     });
-}
-}
-
+} 
+ }
