@@ -20,7 +20,21 @@ else{
     console.log(usuario);
     emailjs.send("service_eajnwps","template_bfsmb7m",usuario)
       alert("Enviado!")
+
+      fetch('https://script.google.com/macros/s/AKfycbzjhL66ryiWxYHkb-i3kQYaIIDHHRg0kmoYuJTXI9lJRpPFWwHfG-sVHGKSajIpy65cjg/exec', {
+        method: 'POST',
+        body: JSON.stringify(usuario),
+        headers: { 'Content-Type': 'application/json' }
+    })
+    .then(response => response.text())
+    .then(result => {
+        alert("Datos enviados correctamente");
+        console.log(result);
+    })
+    .catch(error => {
+        alert("Error al enviar los datos");
+        console.error('Error:', error);
+    });
 }
 }
-  //APPScript test
 
