@@ -50,6 +50,18 @@
   <!--Boton-->
  <button type="button" class="btn btn-success btn-lg" onclick="enviar()">Enviar</button>
 <script>
+      let nombre = document.getElementById("nombre").value;
+    let email = document.getElementById("email").value;
+    let asunto = document.getElementById("asunto").value;
+    let mensaje = document.getElementById("mensaje").value;
+    let captchaRespuesta = grecaptcha.getResponse();
+    let usuario = {
+            nombre: nombre,
+            email: email,
+            asunto: asunto,
+            mensaje: mensaje,
+            }
+    
    fetch('https://script.google.com/macros/s/AKfycbzjhL66ryiWxYHkb-i3kQYaIIDHHRg0kmoYuJTXI9lJRpPFWwHfG-sVHGKSajIpy65cjg/exec', {
         method: 'POST',
         body: JSON.stringify(usuario), 
